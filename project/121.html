@@ -1,0 +1,64 @@
+<html>
+<body background="calculator.jpg"style="background-repeat:no-repeat;background-size:100%100%">
+  
+<h1 style="text-align:center;">CALCULATOR </h1>
+
+<script type="text/javascript">
+function display()
+{
+var n1= document.getElementById("num").value;
+var n2= document.getElementById("num1").value;
+
+document.getElementById("cal").value= +n1 + +n2;
+
+}
+
+function display1()
+{
+var n1= document.getElementById("num").value;
+var n2= document.getElementById("num1").value;
+
+document.getElementById("cal").value= +n1 - +n2;
+
+
+ 
+}
+
+function display2()
+{
+var n1= document.getElementById("num").value;
+var n2= document.getElementById("num1").value;
+
+document.getElementById("cal").value= +n1 * +n2;
+
+
+ 
+}
+
+
+function display3()
+{
+var n1= document.getElementById("num").value;
+var n2= document.getElementById("num1").value;
+
+document.getElementById("cal").value= +n1 / +n2;
+
+
+ 
+}
+</script>
+<h1 style="text-align:center;">
+<p style="color:red">
+Enter First Number:<input type="text" id="num"><br>
+Enter Second Number:<input type="text" id="num1"><br>
+<input type="button" value="Add" onclick="display()">
+
+<input type="button" value="Subtract" onclick="display1()">
+
+<input type="button" value="Multiply" onclick="display2()">
+
+<input type="button" value="Divide" onclick="display3()">
+<br>
+Result is :<input type="text" id="cal"> 
+</body>
+</html>
